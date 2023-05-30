@@ -1,0 +1,88 @@
+body {
+  background-color: #fcc8d1;
+  font-family: "Alata", sans-serif;
+}
+
+.heading {
+  font-size: 4rem;
+  max-width: 25ch;
+  margin-bottom: 2rem;x
+}
+
+.subheading {
+  font-size: 1.75rem;
+  max-width: 50ch;
+}
+
+.container {
+display: flex;
+background-color: #c9a7eb;
+}
+
+.container > .class-item {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 3.5rem;
+  gap: 1.5rem;
+}
+ 
+.buttons > button {
+  padding: 0.7rem 2rem;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons > .see-artwork {
+  background: transparent;
+  border: 3px solid #d14d72;
+  color: #d14d72;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+}
+ 
+.buttons > .contact-me {
+  background-color: #c9a7eb;
+  font-weight: 600;
+  color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.buttons > .see-artwork:hover {
+  transform: scale(1.07);
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+}
+ 
+.buttons > .contact-me:hover {
+  transform: scale(1.07);
+  transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 830px) {
+  .hero__subheading {
+    max-width: 25ch;
+  }
+}
+ 
+@media (max-width: 770px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  img {
+    width: 300px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
